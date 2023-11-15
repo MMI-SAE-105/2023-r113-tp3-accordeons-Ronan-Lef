@@ -16,7 +16,7 @@
     <section x-data="{bouton1IsOpen: false}">
       <button aria-controls="btn_1" @click="bouton1IsOpen = ! bouton1IsOpen">
         bouton 1</button>
-      <p x-show="bouton1IsOpen">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, quod architecto
+      <p x-show="bouton1IsOpen" x-transition.duration.800ms>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, quod architecto
         doloremque maiores similique placeat a praesentium optio dolore! Tempore ex quasi dolore, quae ipsum itaque vero
         voluptatem voluptatum nisi!</p>
     </section>
@@ -24,16 +24,16 @@
     <section x-data="{bouton2IsOpen : false}">
       <button aria-controls="btn_2" @click="bouton2IsOpen = ! bouton2IsOpen">
         bouton 2</button>
-      <p x-show="bouton2IsOpen">Est accusantium quisquam molestias mollitia enim commodi ipsum et reprehenderit illo
+      <p x-show="bouton2IsOpen" x-transition.duration.800ms>Est accusantium quisquam molestias mollitia enim commodi ipsum et reprehenderit illo
         quas harum nesciunt
         aliquam repudiandae eveniet eligendi veritatis impedit, quibusdam incidunt magni consequatur necessitatibus.
         Dignissimos omnis incidunt sunt ex.</p>
     </section>
 
     <section x-data="{bouton3IsOpen : false}">
-      <button aria-controls="btn_3" @click="bouton3IsOpen = ! bouton3IsOpen">
+      <button aria-controls="btn_3" @click="bouton3IsOpen = ! bouton3IsOpen" >
         bouton 3</button>
-      <p x-show="bouton3IsOpen">At officiis doloribus ad consequatur vel ipsam laborum rerum, placeat laboriosam sed ea
+      <p x-show="bouton3IsOpen" x-transition.duration.800ms>At officiis doloribus ad consequatur vel ipsam laborum rerum, placeat laboriosam sed ea
         voluptates earum
         eligendi perferendis recusandae inventore vitae porro velit, veritatis esse alias est. Neque, laboriosam
         magni! Eligendi.</p>
