@@ -9,5 +9,25 @@
   </head>
   <body>
     <h1>Accordéon avec des booléens</h1>
+    <div class="accordeon">
+      
+      <section x-data="{bouton1IsOpen: false}">
+        <button aria-controls="mainNav"@click="bouton1IsOpen = ! bouton1IsOpen">bouton 1</button>
+      <nav id="mainNav">
+        <nav id="mainNav" x-show="bouton1IsOpen">
+          <body>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, quod architecto doloremque maiores similique placeat a praesentium optio dolore! Tempore ex quasi dolore, quae ipsum itaque vero voluptatem voluptatum nisi!</p>
+          </body>
+      </section>
+      
+      <section>
+        <button>bouton 2</button>
+        <p>Est accusantium quisquam molestias mollitia enim commodi ipsum et reprehenderit illo quas harum nesciunt aliquam repudiandae eveniet eligendi veritatis impedit, quibusdam incidunt magni consequatur necessitatibus. Dignissimos omnis incidunt sunt ex.</p>
+      </section>
+      <section>
+        <button>bouton 3</button>
+        <p>At officiis doloribus ad consequatur vel ipsam laborum rerum, placeat laboriosam sed ea voluptates earum eligendi perferendis recusandae inventore vitae porro velit, veritatis esse alias est. Neque, laboriosam magni! Eligendi.</p>
+      </section>
+    </div>
   </body>
 </html>
