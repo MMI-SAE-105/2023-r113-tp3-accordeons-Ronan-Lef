@@ -7,12 +7,13 @@
     <title>Accordéon avec x-collapse</title>
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
     <div class="accordeon" x-data="{boutonIsOpen : 0}">
       <section>
-        <button @click="boutonIsOpen = 1">bouton 1</button>
+        <button :class="{ouvert:boutonIsOpen}" @click="boutonIsOpen = 1">bouton 1</button>
         <p x-show="boutonIsOpen === 1" x-collapse>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, quod
           architecto doloremque maiores similique placeat a praesentium optio
@@ -22,7 +23,7 @@
       </section>
 
       <section>
-        <button @click="boutonIsOpen = 2">bouton 2</button>
+        <button :class="{ouvert:boutonIsOpen}" @click="boutonIsOpen = 2">bouton 2</button>
         <p x-show="boutonIsOpen === 2" x-collapse>
           Est accusantium quisquam molestias mollitia enim commodi ipsum et
           reprehenderit illo quas harum nesciunt aliquam repudiandae eveniet
@@ -32,7 +33,7 @@
       </section>
 
       <section>
-        <button @click="boutonIsOpen = 3">bouton 3</button>
+        <button :class="{ouvert:boutonIsOpen}" @click="boutonIsOpen = 3">bouton 3</button>
         <p x-show="boutonIsOpen === 3" x-collapse>
           At officiis doloribus ad consequatur vel ipsam laborum rerum, placeat
           laboriosam sed ea voluptates earum eligendi perferendis recusandae
