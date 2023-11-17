@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
   </head>
   <body>
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
     <div class="accordeon" x-data="{boutonIsOpen : 0}">
       <section>
         <button>bouton 1</button>
-        <p x-show="boutonIsOpen === 1" >
+        <p x-show="boutonIsOpen === 1">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, quod
           architecto doloremque maiores similique placeat a praesentium optio
           dolore! Tempore ex quasi dolore, quae ipsum itaque vero voluptatem
@@ -22,7 +25,7 @@
 
       <section>
         <button>bouton 2</button>
-        <p>
+        <p x-show="boutonIsOpen === 2">
           Est accusantium quisquam molestias mollitia enim commodi ipsum et
           reprehenderit illo quas harum nesciunt aliquam repudiandae eveniet
           eligendi veritatis impedit, quibusdam incidunt magni consequatur
@@ -32,7 +35,7 @@
 
       <section>
         <button>bouton 3</button>
-        <p>
+        <p x-show="boutonIsOpen === 3">
           At officiis doloribus ad consequatur vel ipsam laborum rerum, placeat
           laboriosam sed ea voluptates earum eligendi perferendis recusandae
           inventore vitae porro velit, veritatis esse alias est. Neque,
