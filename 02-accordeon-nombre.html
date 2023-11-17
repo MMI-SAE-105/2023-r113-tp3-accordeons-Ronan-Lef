@@ -14,8 +14,8 @@
     <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
     <div class="accordeon" x-data="{boutonIsOpen : 0}">
       <section>
-        <button>bouton 1</button>
-        <p x-show="boutonIsOpen === 1">
+        <button @click="boutonIsOpen = 1">bouton 1</button>
+        <p x-show="boutonIsOpen === 1" x-transition.scale.origin.left>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, quod
           architecto doloremque maiores similique placeat a praesentium optio
           dolore! Tempore ex quasi dolore, quae ipsum itaque vero voluptatem
@@ -24,8 +24,8 @@
       </section>
 
       <section>
-        <button>bouton 2</button>
-        <p x-show="boutonIsOpen === 2">
+        <button @click="boutonIsOpen = 2">bouton 2</button>
+        <p x-show="boutonIsOpen === 2" x-transition.scale.origin.left>
           Est accusantium quisquam molestias mollitia enim commodi ipsum et
           reprehenderit illo quas harum nesciunt aliquam repudiandae eveniet
           eligendi veritatis impedit, quibusdam incidunt magni consequatur
@@ -34,8 +34,8 @@
       </section>
 
       <section>
-        <button>bouton 3</button>
-        <p x-show="boutonIsOpen === 3">
+        <button @click="boutonIsOpen = 3">bouton 3</button>
+        <p x-show="boutonIsOpen === 3" x-transition.scale.origin.left>
           At officiis doloribus ad consequatur vel ipsam laborum rerum, placeat
           laboriosam sed ea voluptates earum eligendi perferendis recusandae
           inventore vitae porro velit, veritatis esse alias est. Neque,
