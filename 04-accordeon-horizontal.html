@@ -24,7 +24,7 @@
       #accordeon li.actif {
         width: 317px;
       }
-      #accordeon li figure{
+      #accordeon li figure {
         margin: 0;
         display: flex;
         width: 317px;
@@ -34,23 +34,24 @@
         padding: 10px;
         margin: 10px;
       }
-
+      #accordeon li figure figcaption > * {
+        margin: 0;
+        padding: 0;
+      }
     </style>
     <script
       defer
-      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
-    ></script>
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script
       defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
     <ul id="accordeon">
       <li>
         <figure>
-          <img src="https://picsum.photos/100?random=1" alt="" width="102">
+          <img src="https://picsum.photos/100?random=1" alt="" width="102" />
           <figcaption>
             <h3>Lorem, ipsum dolor.</h3>
             <p>Lorem ipsum dolor sit amet consectetur.</p>
@@ -59,7 +60,7 @@
       </li>
       <li class="actif">
         <figure>
-          <img src="https://picsum.photos/100?random=2" alt="" width="102">
+          <img src="https://picsum.photos/100?random=2" alt="" width="102" />
           <figcaption>
             <h3>Repudiandae, ratione molestias.</h3>
             <p>Eum saepe nam sequi voluptas a.</p>
@@ -68,7 +69,7 @@
       </li>
       <li>
         <figure>
-          <img src="https://picsum.photos/100?random=3" alt="" width="102">
+          <img src="https://picsum.photos/100?random=3" alt="" width="102" />
           <figcaption>
             <h3>Reiciendis, voluptates molestias?</h3>
             <p>Distinctio dolore officia mollitia fuga et.</p>
